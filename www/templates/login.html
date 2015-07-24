@@ -1,0 +1,23 @@
+
+<ion-view view-title="Login">
+  <ion-content class="padding">
+ <div class="list">
+ 	<ion-nav-bar class="bar bar-header bar-calm">
+	    <h2 class="title">Login</h2>
+	</ion-nav-bar>
+  <label class="item item-input">
+    <span class="input-label">Username</span>
+    <input type="text" placeholder="Username" ng-model="loginData.userName">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Password</span>
+    <input type="password" placeholder="Password" ng-model="loginData.password" required>
+  </label>
+
+	<button class="btn btn-lg btn-info btn-block" ng-click="login()">Login</button>
+	<div ng-hide="message == ''" class="alert alert-danger">
+		        {{message}} 
+	</div>
+</div>
+</ion-content>
+</ion-view>
